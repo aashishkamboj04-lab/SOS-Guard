@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#0B1220">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:text="🚨 SOS GUARD"
+            android:textSize="26sp"
+            android:textColor="#FF5252"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- FIXED INPUT -->
+        <EditText
+            android:id="@+id/manualNumber"
+            android:hint="Enter number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAAAAA"
+            android:background="#1C2333"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/addManualBtn"
+            android:text="Add Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/addContactBtn"
+            android:text="Pick Contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- FIXED LIST -->
+        <ListView
+            android:id="@+id/contactList"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#1C2333"
+            android:divider="#FFFFFF"
+            android:dividerHeight="1dp"/>
+
+        <RadioGroup
+            android:id="@+id/modeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/smsOption"
+                android:text="SMS"
+                android:checked="true"
+                android:textColor="#FFFFFF"/>
+
+            <RadioButton
+                android:id="@+id/whatsappOption"
+                android:text="WhatsApp"
+                android:textColor="#FFFFFF"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/sosButton"
+            android:text="SOS"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/statusText"
+            android:text="Listening..."
+            android:textColor="#00E5FF"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
